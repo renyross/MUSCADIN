@@ -519,6 +519,10 @@
         closeDrawer();
         const whSearchInput = document.getElementById('whSearchInput');
         if (whSearchInput) {
+          if (matchMedia('(max-width: 760px)').matches) {
+            const box = whSearchInput.closest('.wh-search-box');
+            box.style.cssText = 'display:flex;position:fixed;top:90px;left:20px;right:20px;max-width:none;background:#102e49;z-index:101;';
+          }
           whSearchInput.focus();
         } else {
           const contact = document.getElementById('contact');
