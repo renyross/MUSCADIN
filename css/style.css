@@ -2634,8 +2634,8 @@ section[id], details[id], #donationForm { scroll-margin-top: 95px; }
 /* Visuel fourni pour le hero. */
 .editorial-hero .campaign-hero-photo { background: linear-gradient(180deg,#06132120 10%,transparent 35%,#06132155 85%,#06132180),url('../assets/hero-muscadin-flag.png') center center / cover no-repeat; }
 @media(max-width:760px) { .editorial-hero .campaign-hero-photo { background-image: linear-gradient(90deg,#061321a6,#06132135),linear-gradient(0deg,#061321b3,transparent 75%),url('../assets/hero-muscadin-flag.png'); background-position: center,center,68% top; } }
-/* Mobile : conserver le portrait entier en haut du hero sans recadrage horizontal. */
+/* Mobile : portrait en fond, cadré vers la droite de l’image pour déplacer le visage à gauche. */
 @media(max-width:760px) {
- .editorial-hero .campaign-hero-photo { background-color: #061321; background-image: linear-gradient(0deg,#061321 0%,#06132100 45%),url('../assets/hero-muscadin-flag.png'); background-size: 100% 70vw,auto 70vw; background-position: center 82px,right 82px; background-repeat: no-repeat; }
- .editorial-lead { padding-top: calc(82px + 62vw); }
+ .editorial-hero .campaign-hero-photo { background-color: #061321; background-image: linear-gradient(90deg,#06132180,#06132115),linear-gradient(0deg,#06132199,transparent 75%),url('../assets/hero-muscadin-flag.png'); background-size: cover; background-position: center,center,90% top; background-repeat: no-repeat; }
+ .editorial-lead { padding-top: clamp(170px,24svh,230px); }
 }
