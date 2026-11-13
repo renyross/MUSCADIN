@@ -2503,3 +2503,58 @@ section[id], details[id], #donationForm { scroll-margin-top: 95px; }
  .newsroom-grid { gap: 18px; }.newsroom-card h3 { font-size: 20px; }.newsroom-card-body { padding: 20px; }
 }
 @media(max-width:600px) { .movement-grid { gap: 10px; width: calc(100% - 32px); }.movement-card { min-height: 230px; padding: 16px; }.movement-card h3 { font-size: 17px; }.movement-arrow { right: 12px; bottom: 15px; width: 22px; height: 22px; }.campaign-collage { min-height: 350px; }.campaign-gatherings .gathering-card h3 { font-size: 21px; }.volunteer-values { gap: 25px 15px; }.volunteer-values strong { font-size: 20px; } #participer .support-newsletter { padding: 23px; } }
+/* Engagement : deux cartes éditoriales avec photographie et appel à agir. */
+.engagement-strip { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; padding: 55px max(24px,calc((100% - 1192px)/2)); background: #f3f6f8; font-family: 'Outfit',Arial,sans-serif; }
+.engagement-card { display: grid; grid-template-columns: .9fr 1.1fr; min-width: 0; background: #102e49; overflow: hidden; }
+.engagement-card .engagement-photo { min-height: 345px; }
+.engagement-card .engagement-photo img { filter: saturate(.7); transition: transform .4s; }
+.engagement-card:hover .engagement-photo img { transform: scale(1.04); }
+.engagement-card .engagement-panel { padding: 30px 26px; min-width: 0; justify-content: flex-start; background: #102e49; }
+.engagement-card .campaign-kicker { color: #7bc7e8; font-size: 9px; font-weight: 500; letter-spacing: 1.6px; margin-bottom: 25px; }
+.engagement-card .engagement-panel h2 { font-family: inherit; font-weight: 500; font-size: clamp(25px,2.2vw,32px); letter-spacing: -.7px; line-height: 1.15; color: #fff; margin-bottom: 18px; }
+.engagement-card .engagement-panel p { font-size: 13px; line-height: 1.7; color: #b5cbdc; margin-bottom: 30px; }
+.engagement-card .engagement-panel .campaign-button { width: 100%; margin-top: auto; padding: 13px 0 0; border-top: 1px solid #ffffff35; background: transparent; color: #fff; font-size: 12px; font-weight: 500; gap: 10px; }
+.engagement-card .engagement-panel .campaign-button:hover { color: #7bc7e8; transform: none; }
+.engagement-card:nth-child(2) .engagement-panel { background: #e2edf4; }
+.engagement-card:nth-child(2) .campaign-kicker { color: #287ca4; }
+.engagement-card:nth-child(2) .engagement-panel h2 { color: #153951; }
+.engagement-card:nth-child(2) .engagement-panel p { color: #56748a; }
+.engagement-card:nth-child(2) .engagement-panel .campaign-button { border-color: #b1c9d8; color: #1b5a7b; }
+@media(max-width:1000px) { .engagement-strip { gap: 18px; } .engagement-card { grid-template-columns: 1fr; } .engagement-card .engagement-photo { min-height: 220px; } .engagement-card .engagement-panel { min-height: 310px; padding: 25px; } }
+@media(max-width:600px) { .engagement-strip { grid-template-columns: 1fr; gap: 22px; padding: 30px 20px; } .engagement-card .engagement-photo { min-height: 235px; } .engagement-card .engagement-panel { min-height: 285px; } .engagement-card .engagement-panel h2 { font-size: 30px; } .engagement-card .campaign-kicker { margin-bottom: 18px; } }
+@media(prefers-reduced-motion:reduce) { .engagement-card .engagement-photo img { transition: none; } }
+/* Navigation plein écran assortie à la direction éditoriale. */
+.wh-menu-overlay { width: 100%; height: 100dvh; background: #0b2135; color: white; font-family: 'Outfit',Arial,sans-serif; }
+.wh-overlay-topbar { max-width: 1320px; margin: 0 auto; padding: 28px 40px; gap: 15px; border-bottom: 1px solid #ffffff18; }
+.overlay-brand { margin-right: auto; font-size: 26px; }
+.wh-overlay-close-btn, .wh-overlay-search-btn { width: 43px; height: 43px; padding: 10px; color: #c3d9e8; border: 1px solid #ffffff25; border-radius: 50%; }
+.wh-overlay-close-btn { order: 3; }
+.wh-overlay-search-btn { order: 2; }
+.wh-overlay-close-btn:hover, .wh-overlay-search-btn:hover { color: white; background: #ffffff12; transform: none; }
+.wh-overlay-body { max-width: 1320px; padding: 45px 40px; margin: auto; grid-template-columns: 1.1fr .9fr; gap: 100px; }
+.overlay-eyebrow { display: block; color: #66b9df; font-size: 10px; letter-spacing: 2px; margin-bottom: 22px; }
+.wh-overlay-list { gap: 0; counter-reset: menu; }
+.wh-overlay-list > li { counter-increment: menu; border-bottom: 1px solid #ffffff15; }
+.wh-overlay-link { display: flex; width: 100%; gap: 20px; padding: 13px 0; font: 400 clamp(26px,3.2vw,44px)/1.2 'Outfit',Arial,sans-serif; letter-spacing: -1px; color: #e5edf4; }
+.wh-overlay-link::before { content: '0' counter(menu); font-size: 10px; letter-spacing: 0; color: #62839b; align-self: center; }
+.wh-overlay-link:hover { color: #67c7f0; transform: none; }
+.wh-overlay-link.active { color: #67c7f0; font-weight: 400; }
+.wh-overlay-arrow { margin-left: auto; color: #7299b3; font-size: 22px; }
+.wh-overlay-divider { display: none; }
+.wh-overlay-sublist { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px 25px; }
+.wh-overlay-sublink { font: 400 12px/1.6 'Outfit',Arial,sans-serif; color: #9cb8cc; }
+.wh-overlay-sublink:hover { color: white; }
+.wh-overlay-lang-box { margin-top: 30px; gap: 14px; }
+.overlay-language-label { color: #62839b; font-size: 9px; letter-spacing: 1.5px; margin-right: 12px; }
+.wh-overlay-lang-btn { color: #86a0b4; font: 500 11px 'Outfit',Arial,sans-serif; letter-spacing: .7px; padding: 6px 0; }
+.wh-overlay-lang-btn.active { color: #fff; border-color: #29a8e0; }
+.wh-overlay-seal-col.overlay-feature { display: block; position: relative; min-width: 0; height: 480px; overflow: hidden; isolation: isolate; }
+.overlay-feature-image { position: absolute; inset: 0; height: 100%; width: 100%; object-fit: cover; object-position: 65% center; }
+.overlay-feature::after { content: ''; position: absolute; inset: 0; background: linear-gradient(transparent 10%,#031626ed); z-index: 1; }
+.overlay-feature-copy { position: absolute; left: 32px; right: 32px; bottom: 30px; z-index: 2; }
+.overlay-feature-copy > span { color: #abd8ef; font-size: 9px; letter-spacing: 1.8px; }
+.overlay-feature-copy h2 { font: 400 42px/1.1 'Outfit',Arial,sans-serif; color: white; letter-spacing: -1px; margin: 18px 0 25px; }
+.overlay-feature-copy a { display: flex; justify-content: space-between; border-top: 1px solid #ffffff40; padding-top: 15px; color: white; }
+@media(max-width:900px) { .wh-overlay-body { gap: 40px; } .wh-overlay-seal-col.overlay-feature { height: 420px; }.overlay-feature-copy { left: 22px; right: 22px; }.overlay-feature-copy h2 { font-size: 34px; } }
+@media(max-width:650px) { .wh-overlay-topbar { padding: 22px; }.overlay-brand { font-size: 23px; }.wh-overlay-body { display: block; padding: 30px 25px 40px; margin: 0; }.wh-overlay-seal-col.overlay-feature { display: none; }.wh-overlay-link { font-size: 32px; padding: 15px 0; }.wh-overlay-sublist { gap: 12px 20px; }.wh-overlay-lang-box { margin-top: 25px; } }
+@media(prefers-reduced-motion:reduce) { .wh-menu-overlay { transition: none; } }

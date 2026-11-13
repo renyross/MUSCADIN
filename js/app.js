@@ -491,6 +491,7 @@
       els.mobileDrawer.setAttribute('aria-hidden', 'false');
       els.mobileMenuBtn.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
+      els.drawerCloseBtn?.focus();
     }
 
     function closeDrawer() {
@@ -499,6 +500,7 @@
       els.mobileDrawer.setAttribute('aria-hidden', 'true');
       els.mobileMenuBtn.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
+      els.mobileMenuBtn.focus();
     }
 
     els.mobileMenuBtn.addEventListener('click', openDrawer);
@@ -506,7 +508,7 @@
     if (els.drawerOverlay) els.drawerOverlay.addEventListener('click', closeDrawer);
 
     // Fermeture lors d'un clic sur un lien du menu ou de l'overlay
-    document.querySelectorAll('.mobile-nav-link, .wh-overlay-link, .wh-overlay-sublink').forEach(link => {
+    document.querySelectorAll('.mobile-nav-link, .wh-overlay-link, .wh-overlay-sublink, .overlay-brand').forEach(link => {
       link.addEventListener('click', closeDrawer);
     });
 
@@ -524,6 +526,14 @@
         }
       });
     }
+
+    els.mobileDrawer.addEventListener('keydown', event => {
+      if (event.key !== 'Tab') return;
+      const items = [...els.mobileDrawer.querySelectorAll('a[href], button, input')].filter(item => item.getClientRects().length && !item.disabled);
+      const first = items[0], last = items[items.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    });
 
     // Échap pour fermer
     document.addEventListener('keydown', (e) => {

@@ -81,6 +81,7 @@
     
     <!-- Barre supérieure de l'overlay : Croix ✕ à gauche & Recherche 🔍 à droite -->
     <div class="wh-overlay-topbar">
+      <a class="editorial-brand overlay-brand" href="#accueil" aria-label="Muscadin, accueil"><span class="editorial-brand-dot" aria-hidden="true"></span><span>MUSCADIN</span></a>
       <button type="button" class="wh-overlay-close-btn" id="drawerCloseBtn" aria-label="Fermer le menu">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
           <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -102,6 +103,7 @@
       <!-- Colonne Gauche : Liste des menus avec flèche bronze ▸ -->
       <div class="wh-overlay-menu-col">
         <nav class="wh-overlay-nav" aria-label="Menu complet">
+          <span class="overlay-eyebrow">EXPLORER LE MOUVEMENT</span>
           <ul class="wh-overlay-list">
             <li>
               <a href="#accueil" class="wh-overlay-link active">
@@ -111,25 +113,25 @@
             <li>
               <a href="#programme" class="wh-overlay-link">
                 <span data-i18n="nav.program">Le programme</span>
-                <span class="wh-overlay-arrow" aria-hidden="true">▸</span>
+                <span class="wh-overlay-arrow" aria-hidden="true">↗</span>
               </a>
             </li>
             <li>
               <a href="#parcours" class="wh-overlay-link">
                 <span data-i18n="nav.bio">Le parcours</span>
-                <span class="wh-overlay-arrow" aria-hidden="true">▸</span>
+                <span class="wh-overlay-arrow" aria-hidden="true">↗</span>
               </a>
             </li>
             <li>
               <a href="#actualites" class="wh-overlay-link">
                 <span data-i18n="nav.news">Actualités</span>
-                <span class="wh-overlay-arrow" aria-hidden="true">▸</span>
+                <span class="wh-overlay-arrow" aria-hidden="true">↗</span>
               </a>
             </li>
             <li>
               <a href="#faire-un-don" class="wh-overlay-link">
                 <span data-i18n="nav.participate">Participer</span>
-                <span class="wh-overlay-arrow" aria-hidden="true">▸</span>
+                <span class="wh-overlay-arrow" aria-hidden="true">↗</span>
               </a>
             </li>
           </ul>
@@ -153,7 +155,7 @@
 
           <!-- Sélecteur bilingue épuré -->
           <div class="wh-overlay-lang-box">
-            <span style="font-size:0.8125rem; color:#888888; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; margin-right:0.5rem;">Langue :</span>
+            <span class="overlay-language-label">LANGUE</span>
             <button type="button" class="lang-btn wh-overlay-lang-btn active" data-lang="fr" aria-pressed="true">FRANÇAIS</button>
             <span style="color:#D0D0D0;">|</span>
             <button type="button" class="lang-btn wh-overlay-lang-btn" data-lang="ht" aria-pressed="false">KREYÒL</button>
@@ -162,8 +164,9 @@
       </div>
 
       <!-- Colonne Droite : Sceau Présidentiel Géant en Filigrane (Style Image 2) -->
-      <div class="wh-overlay-seal-col" aria-hidden="true">
-        <img src="assets/seal-watermark-muscadin.svg" alt="" class="wh-overlay-watermark" width="560" height="560" loading="eager">
+      <div class="wh-overlay-seal-col overlay-feature">
+        <img src="assets/haiti-hero-presidential.jpg" alt="La Citadelle Laferrière en Haïti" width="560" height="650" class="overlay-feature-image">
+        <div class="overlay-feature-copy"><span>UNE VISION COMMUNE POUR HAÏTI</span><h2>Un nouvel avenir.<br>Avec vous.</h2><a href="#faire-un-don" class="wh-overlay-sublink">Soutenir le mouvement <span aria-hidden="true">↗</span></a></div>
       </div>
 
     </div>
@@ -182,9 +185,9 @@
     <section class="campaign-hero editorial-hero" id="accueil" aria-labelledby="campaign-title">
       <div class="campaign-hero-photo" role="img" aria-label="La Citadelle Laferrière et le drapeau haïtien"></div>
       <div class="editorial-hero-inner">
-        <div class="editorial-featured" aria-label="À découvrir"><a href="#parcours"><img src="assets/haiti-press-conference.jpg" alt="" width="320" height="380"><span class="editorial-card-tag">PARCOURS</span><h2>Un engagement au service de la justice</h2></a><a href="#programme"><img src="assets/haiti-youth-education.jpg" alt="" width="320" height="380"><span class="editorial-card-tag">AVENIR</span><h2>Construire les perspectives de demain</h2></a></div>
+
         <div class="editorial-lead"><span class="editorial-category">NOTRE ENGAGEMENT</span><h1 id="campaign-title">Et si nous écrivions<br>un nouvel avenir<br>pour Haïti ?</h1><div class="editorial-story-links"><a href="#programme"><span aria-hidden="true">→</span> Découvrir le projet</a><a href="#parcours">Le parcours</a><a href="#faire-un-don">S’engager ensemble</a></div></div>
-        <aside class="editorial-manifesto"><span aria-hidden="true">“</span><p>La justice, la sécurité et la dignité de chaque citoyen au cœur de notre engagement.</p><a href="#programme">Notre vision <span aria-hidden="true">↗</span></a></aside>
+
       </div>
       <div class="editorial-watermark" aria-hidden="true">MUSCADIN</div>
       <div class="editorial-ticker" aria-label="Explorer le mouvement">
@@ -196,13 +199,16 @@
     </section>
 
     <section class="engagement-strip" aria-label="Agir ensemble">
+      <article class="engagement-card">
       <div class="engagement-photo"><img src="assets/haiti-youth-education.jpg" alt="Jeunesse et éducation en Haïti" width="688" height="768"></div>
       <div class="engagement-panel engagement-coral">
         <span class="campaign-kicker">CHAQUE VOIX COMPTE</span>
         <h2>Votre énergie.<br>Notre force collective.</h2>
         <p>Prenez part au mouvement et faites entendre votre voix.</p>
-        <a class="campaign-button" href="#faire-un-don">Je m’engage <span aria-hidden="true">↗</span></a>
+        <a class="campaign-button" href="#programme">Je m’engage <span aria-hidden="true">↗</span></a>
       </div>
+      </article>
+      <article class="engagement-card">
       <div class="engagement-photo"><img src="assets/haiti-farmers-cooperative.jpg" alt="Coopération agricole en Haïti" width="688" height="768" loading="lazy"></div>
       <div class="engagement-panel engagement-blue">
         <span class="campaign-kicker">AGISSONS AUJOURD’HUI</span>
@@ -210,6 +216,7 @@
         <p>Contribuez à porter un projet commun pour Haïti.</p>
         <a class="campaign-button" href="#donationForm">Soutenir le mouvement <span aria-hidden="true">↗</span></a>
       </div>
+      </article>
     </section>
 
     <section class="campaign-about" id="parcours">
