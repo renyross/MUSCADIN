@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img" aria-label="Transparence et assainissement des finances publiques">
+  <defs>
+    <linearGradient id="bgTransp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B2748" />
+      <stop offset="100%" stop-color="#183B5C" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bgTransp)" />
+  <!-- Registre ouvert du Trésor public avec sceau officiel -->
+  <g transform="translate(200, 105)">
+    <!-- Livre / Registre ouvert -->
+    <path d="M -110,-40 C -60,-50 -10,-40 0,-30 C 10,-40 60,-50 110,-40 L 110,50 C 60,40 10,50 0,60 C -10,50 -60,40 -110,50 Z" fill="#FFFFFF" fill-opacity="0.12" stroke="#AD8B60" stroke-width="2" />
+    <!-- Reliure -->
+    <line x1="0" y1="-30" x2="0" y2="60" stroke="#AD8B60" stroke-width="3" />
+    <!-- Sceau de certification de conformité -->
+    <circle cx="0" cy="15" r="28" fill="#0B2748" stroke="#AD8B60" stroke-width="2.5" />
+    <text x="0" y="21" font-family="'Merriweather', Georgia, serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle">✓</text>
+  </g>
+  <text x="200" y="210" font-family="'Source Sans 3', sans-serif" font-weight="900" font-size="12" fill="#AD8B60" text-anchor="middle" letter-spacing="2">RÉGULARITÉ DES FINANCES PUBLIQUES</text>
+  <rect x="0" y="235" width="400" height="5" fill="#AD8B60" />
+</svg>

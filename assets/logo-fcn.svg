@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" width="420" height="100" role="img" aria-label="Logo Fòs Chanjman Nasyonal">
+  <defs>
+    <linearGradient id="curveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AD8B60" />
+      <stop offset="100%" stop-color="#C6AA84" />
+    </linearGradient>
+    <filter id="subtleShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#142B43" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Emblem / Graphic Symbol: Unified forward momentum arch with the signature yellow curve -->
+  <g transform="translate(10, 10)">
+    <!-- Violet circular back-shield segment -->
+    <path d="M 40 5 A 35 35 0 0 1 75 40 A 35 35 0 0 1 40 75 A 35 35 0 0 1 5 40 A 35 35 0 0 1 40 5 Z" fill="#0B2748" />
+    
+    <!-- Distinctive dynamic upward curve in accent yellow #AD8B60 -->
+    <path d="M 12 55 Q 38 10, 70 24 Q 45 42, 22 62 Z" fill="url(#curveGrad)" filter="url(#subtleShadow)" />
+    
+    <!-- Star of Hope / Convergence -->
+    <polygon points="40,22 43,30 52,30 45,35 48,43 40,38 32,43 35,35 28,30 37,30" fill="#FFFFFF" />
+  </g>
+
+  <!-- Typography: FÒS CHANJMAN NASYONAL -->
+  <g transform="translate(98, 20)">
+    <!-- Main acronym / headline -->
+    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="24" fill="#0B2748" letter-spacing="1.5">FÒS CHANJMAN</text>
+    
+    <!-- Subtitle / National designation -->
+    <text x="0" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" font-size="16" fill="#142B43" letter-spacing="3.2">NASYONAL</text>
+
+    <!-- Underline accent curve -->
+    <path d="M 0 60 Q 90 64, 180 58" stroke="#AD8B60" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  </g>
+</svg>
+

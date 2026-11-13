@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 650" width="1600" height="650" role="img" aria-label="Bannière officielle présidentielle Jean Ernest Muscadin">
+  <defs>
+    <!-- Ciel d'azur républicain -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4B779F" />
+      <stop offset="45%" stop-color="#6F9BC4" />
+      <stop offset="85%" stop-color="#A5C6E4" />
+      <stop offset="100%" stop-color="#D8E7F4" />
+    </linearGradient>
+
+    <!-- Dégradé sombre présidentiel à gauche (vignette White House) -->
+    <linearGradient id="darkVignette" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#071B32" stop-opacity="0.95" />
+      <stop offset="35%" stop-color="#071B32" stop-opacity="0.88" />
+      <stop offset="55%" stop-color="#071B32" stop-opacity="0.65" />
+      <stop offset="75%" stop-color="#071B32" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#071B32" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Rayons subtils d'aurore -->
+    <linearGradient id="sunGlow" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF4C2" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="softBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+  </defs>
+
+  <!-- 1. Arrière-plan : Ciel ouvert et horizon d'État -->
+  <rect width="1600" height="650" fill="url(#skyGrad)" />
+  <rect width="1600" height="650" fill="url(#sunGlow)" />
+
+  <!-- Nuages subtils -->
+  <ellipse cx="1200" cy="180" rx="280" ry="40" fill="#FFFFFF" fill-opacity="0.2" filter="url(#softBlur)" />
+  <ellipse cx="1400" cy="240" rx="220" ry="30" fill="#FFFFFF" fill-opacity="0.25" filter="url(#softBlur)" />
+
+  <!-- 2. Silhouette de l'avion présidentiel / passerelle d'honneur officielle à droite -->
+  <g transform="translate(1000, 120)">
+    <!-- Fuselage arrière de l'appareil officiel aux couleurs d'État -->
+    <path d="M 320,10 C 450,40 550,120 600,240 L 600,480 L 120,480 C 140,400 180,320 240,240 Z" fill="#DDEAF5" fill-opacity="0.75" />
+    <path d="M 330,40 C 440,80 520,160 560,260 L 560,340 L 220,340 Z" fill="#0B2748" fill-opacity="0.3" />
+    
+    <!-- Ligne d'or présidentielle sur l'appareil -->
+    <path d="M 310,70 Q 460,110 580,240" stroke="#AD8B60" stroke-width="6" fill="none" />
+
+    <!-- Passerelle d'embarquement officielle avec rambarde métallique -->
+    <rect x="-80" y="310" width="480" height="180" fill="#4A5666" fill-opacity="0.9" />
+    <polygon points="-80,310 400,310 380,290 -100,290" fill="#2C3540" />
+    <!-- Rambardes -->
+    <line x1="-80" y1="210" x2="380" y2="210" stroke="#CBD5E1" stroke-width="7" />
+    <line x1="-80" y1="250" x2="380" y2="250" stroke="#CBD5E1" stroke-width="4" />
+    <line x1="-40" y1="210" x2="-40" y2="310" stroke="#CBD5E1" stroke-width="6" />
+    <line x1="80" y1="210" x2="80" y2="310" stroke="#CBD5E1" stroke-width="6" />
+    <line x1="200" y1="210" x2="200" y2="310" stroke="#CBD5E1" stroke-width="6" />
+    <line x1="320" y1="210" x2="320" y2="310" stroke="#CBD5E1" stroke-width="6" />
+
+    <!-- SILHOUETTE STATUAIRE DU CANDIDAT (Bras levé saluant le peuple, comme sur la photo de référence) -->
+    <g transform="translate(130, 70)">
+      <!-- Tête -->
+      <circle cx="20" cy="20" r="19" fill="#102C49" />
+      
+      <!-- Costume officiel sombre -->
+      <path d="M -15,48 L 55,48 L 65,180 L -25,180 Z" fill="#06172C" />
+      <!-- Col de chemise blanche & cravate officielle -->
+      <polygon points="12,48 28,48 24,70 16,70" fill="#FFFFFF" />
+      <!-- Cravate rouge/or républicaine -->
+      <polygon points="18,52 22,52 25,120 20,135 15,120" fill="#AD8B60" />
+      
+      <!-- Bras gauche le long du corps -->
+      <path d="M -15,48 L -28,110 L -18,125 L -5,65 Z" fill="#06172C" />
+      
+      <!-- BRAS DROIT LEVÉ SALUANT (Mouvement iconique) -->
+      <!-- Épaule et bras tendu vers le haut -->
+      <path d="M 45,55 L 75,-10 L 92,-4 L 60,65 Z" fill="#06172C" />
+      <!-- Main ouverte saluant les citoyens -->
+      <circle cx="85" cy="-22" r="11" fill="#C59B79" />
+      <path d="M 80,-30 L 96,-15 L 88,-8 L 74,-22 Z" fill="#C59B79" />
+    </g>
+
+    <!-- Sceau républicain discret sur la passerelle -->
+    <g transform="translate(120, 360)">
+      <circle cx="30" cy="30" r="26" fill="#0B2748" stroke="#AD8B60" stroke-width="2" />
+      <polygon points="30,15 32,21 38,21 33,25 35,31 30,27 25,31 27,25 22,21 28,21" fill="#AD8B60" />
+      <text x="30" y="44" font-family="'Merriweather', Georgia, serif" font-weight="900" font-size="11" fill="#FFFFFF" text-anchor="middle">JEM</text>
+    </g>
+  </g>
+
+  <!-- 3. VIGNETTE SOMBRE PRÉSIDENTIELLE À GAUCHE (Exactement comme dans la capture White House) -->
+  <rect width="1600" height="650" fill="url(#darkVignette)" />
+
+  <!-- 4. Ligne d'or d'accent au bas de la bannière -->
+  <line x1="0" y1="647" x2="1600" y2="647" stroke="#AD8B60" stroke-width="6" />
+
+  <!-- Mention de conformité légale en filigrane discret -->
+  <text x="1570" y="630" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#FFFFFF" fill-opacity="0.6" text-anchor="end" font-style="italic">
+    Composition éditoriale de prévisualisation officielle • Jean Ernest Muscadin
+  </text>
+</svg>

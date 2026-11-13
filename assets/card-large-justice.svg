@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 740" width="600" height="740" role="img" aria-label="Justice et État de droit — Grand format">
+  <defs>
+    <linearGradient id="largeJustGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B2748" />
+      <stop offset="40%" stop-color="#183B5C" />
+      <stop offset="100%" stop-color="#24486B" />
+    </linearGradient>
+    <linearGradient id="goldGleam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AD8B60" />
+      <stop offset="100%" stop-color="#C6AA84" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="740" fill="url(#largeJustGrad)" />
+
+  <!-- Structure néoclassique imposante du Palais de Justice -->
+  <g fill="#FFFFFF" fill-opacity="0.08">
+    <rect x="50" y="140" width="36" height="480" />
+    <rect x="150" y="140" width="36" height="480" />
+    <rect x="250" y="140" width="36" height="480" />
+    <rect x="350" y="140" width="36" height="480" />
+    <rect x="450" y="140" width="36" height="480" />
+    <polygon points="20,140 300,50 580,140" />
+  </g>
+
+  <!-- Décoration murale d'État avec drapeau d'Haïti stylisé en arrière-plan -->
+  <g transform="translate(150, 200)" opacity="0.25">
+    <rect x="0" y="0" width="300" height="90" fill="#00209F" />
+    <rect x="0" y="90" width="300" height="90" fill="#D21034" />
+  </g>
+
+  <!-- Pupitre présidentiel avec le Sceau officiel au centre -->
+  <g transform="translate(300, 480)">
+    <!-- Pupitre en bois noble -->
+    <polygon points="-120,40 120,40 100,240 -100,240" fill="#102C49" stroke="#2C506E" stroke-width="2" />
+    <rect x="-135" y="25" width="270" height="20" rx="3" fill="#204564" stroke="#AD8B60" stroke-width="1.5" />
+    
+    <!-- Microphones officiels -->
+    <line x1="-30" y1="25" x2="-20" y2="-20" stroke="#CBD5E1" stroke-width="3" />
+    <circle cx="-20" cy="-24" r="5" fill="#475569" />
+    <line x1="30" y1="25" x2="20" y2="-20" stroke="#CBD5E1" stroke-width="3" />
+    <circle cx="20" cy="-24" r="5" fill="#475569" />
+
+    <!-- Sceau Présidentiel JEM sur le pupitre -->
+    <circle cx="0" cy="115" r="48" fill="#0B2748" stroke="#AD8B60" stroke-width="3" />
+    <circle cx="0" cy="115" r="42" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="3 2" />
+    <!-- Étoile -->
+    <polygon points="0,85 3,94 12,94 5,100 8,109 0,103 -8,109 -5,100 -12,94 -3,94" fill="#AD8B60" />
+    <!-- Monogramme JEM -->
+    <text x="0" y="132" font-family="'Merriweather', Georgia, serif" font-weight="900" font-size="19" fill="#FFFFFF" text-anchor="middle">JEM</text>
+  </g>
+
+  <!-- Silhouette de la foule républicaine au premier plan (assemblée citoyenne) -->
+  <g fill="#06172C" fill-opacity="0.95">
+    <ellipse cx="60" cy="740" rx="60" ry="80" />
+    <ellipse cx="160" cy="740" rx="65" ry="75" />
+    <ellipse cx="260" cy="740" rx="55" ry="70" />
+    <ellipse cx="360" cy="740" rx="60" ry="75" />
+    <ellipse cx="460" cy="740" rx="65" ry="80" />
+    <ellipse cx="550" cy="740" rx="55" ry="70" />
+  </g>
+
+  <!-- Filet d'or supérieur -->
+  <rect x="0" y="0" width="600" height="6" fill="url(#goldGleam)" />
+</svg>

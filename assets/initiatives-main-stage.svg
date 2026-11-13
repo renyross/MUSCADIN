@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 800" width="700" height="800" role="img" aria-label="Jean Ernest Muscadin à la tribune officielle">
+  <defs>
+    <!-- Draps d'or républicains (style East Room White House de la capture) -->
+    <linearGradient id="goldDrapes" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C59B27" />
+      <stop offset="25%" stop-color="#ECC856" />
+      <stop offset="50%" stop-color="#AA821A" />
+      <stop offset="75%" stop-color="#ECC856" />
+      <stop offset="100%" stop-color="#B88E1F" />
+    </linearGradient>
+
+    <!-- Mur classique blanc crème avec moulures dorées -->
+    <linearGradient id="wallCream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAF8F5" />
+      <stop offset="100%" stop-color="#F0ECE3" />
+    </linearGradient>
+
+    <filter id="stageShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#071B32" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- 1. Mur de fond avec boiseries et moulures classiques de réception officielle -->
+  <rect width="700" height="800" fill="url(#wallCream)" />
+  <rect x="30" y="30" width="640" height="740" fill="none" stroke="#DCD3C1" stroke-width="2" />
+  <rect x="50" y="50" width="600" height="700" fill="none" stroke="#E8DFCE" stroke-width="1.5" />
+
+  <!-- Appliques murales dorées classiques -->
+  <g transform="translate(110, 240)">
+    <circle cx="0" cy="0" r="14" fill="#C59B27" />
+    <path d="M -15,-5 L -20,-25 L 0,-20 Z" fill="#ECC856" />
+    <path d="M 15,-5 L 20,-25 L 0,-20 Z" fill="#ECC856" />
+    <circle cx="-18" cy="-30" r="6" fill="#FFF2B2" />
+    <circle cx="18" cy="-30" r="6" fill="#FFF2B2" />
+  </g>
+  <g transform="translate(590, 240)">
+    <circle cx="0" cy="0" r="14" fill="#C59B27" />
+    <path d="M -15,-5 L -20,-25 L 0,-20 Z" fill="#ECC856" />
+    <path d="M 15,-5 L 20,-25 L 0,-20 Z" fill="#ECC856" />
+    <circle cx="-18" cy="-30" r="6" fill="#FFF2B2" />
+    <circle cx="18" cy="-30" r="6" fill="#FFF2B2" />
+  </g>
+
+  <!-- 2. Les Grands Draps d'Or Cérémoniaux (Exactement comme dans la capture) -->
+  <g transform="translate(200, 30)">
+    <!-- Feston supérieur à volants dorés -->
+    <path d="M 0,0 L 300,0 L 300,80 Q 225,120 150,80 Q 75,120 0,80 Z" fill="url(#goldDrapes)" filter="url(#stageShadow)" />
+    <!-- Franges d'or -->
+    <path d="M 0,80 Q 75,120 150,80 Q 225,120 300,80" stroke="#7A5A0A" stroke-width="4" stroke-dasharray="3 3" fill="none" />
+    <!-- Rideau central tombant en plis majestueux -->
+    <rect x="25" y="70" width="250" height="420" fill="url(#goldDrapes)" />
+    <!-- Plis verticaux du rideau -->
+    <line x1="55" y1="70" x2="55" y2="490" stroke="#8A6510" stroke-width="3" stroke-opacity="0.6" />
+    <line x1="95" y1="70" x2="95" y2="490" stroke="#FFE978" stroke-width="3" stroke-opacity="0.7" />
+    <line x1="145" y1="70" x2="145" y2="490" stroke="#8A6510" stroke-width="4" stroke-opacity="0.6" />
+    <line x1="195" y1="70" x2="195" y2="490" stroke="#FFE978" stroke-width="3" stroke-opacity="0.7" />
+    <line x1="235" y1="70" x2="235" y2="490" stroke="#8A6510" stroke-width="3" stroke-opacity="0.6" />
+  </g>
+
+  <!-- 3. Drapeaux d'État encadrant la tribune -->
+  <!-- Drapeau gauche (Drapeau d'Haïti) -->
+  <g transform="translate(240, 200)">
+    <line x1="0" y1="0" x2="0" y2="280" stroke="#7A5A0A" stroke-width="4" />
+    <polygon points="0,0 10,-8 0,-16 -10,-8" fill="#ECC856" />
+    <!-- Tissu du drapeau -->
+    <path d="M 0,10 Q 30,30 20,80 Q -10,140 10,220 L 0,220 Z" fill="#00209F" opacity="0.9" />
+    <path d="M 0,110 Q 30,130 20,180 Q -10,240 10,300 L 0,300 Z" fill="#D21034" opacity="0.9" />
+  </g>
+  <!-- Drapeau droit (Drapeau Présidentiel) -->
+  <g transform="translate(460, 200)">
+    <line x1="0" y1="0" x2="0" y2="280" stroke="#7A5A0A" stroke-width="4" />
+    <polygon points="0,0 10,-8 0,-16 -10,-8" fill="#ECC856" />
+    <path d="M 0,10 Q -30,30 -20,80 Q 10,140 -10,220 L 0,220 Z" fill="#0B2748" opacity="0.9" />
+    <path d="M 0,110 Q -30,130 -20,180 Q 10,240 -10,300 L 0,300 Z" fill="#AD8B60" opacity="0.9" />
+  </g>
+
+  <!-- 4. Pupitre officiel et Candidat à la tribune -->
+  <g transform="translate(350, 220)">
+    <!-- SILHOUETTE STATUAIRE DU CANDIDAT EN TENUE OFFICIELLE -->
+    <circle cx="0" cy="55" r="24" fill="#142B43" />
+    <!-- Veste sombre et chemise blanche -->
+    <path d="M -30,95 L 30,95 L 40,240 L -40,240 Z" fill="#071B32" />
+    <polygon points="-8,95 8,95 5,130 -5,130" fill="#FFFFFF" />
+    <polygon points="-3,100 3,100 4,180 0,195 -4,180" fill="#C5221F" />
+
+    <!-- Pupitre officiel en bois sombre -->
+    <g transform="translate(0, 190)">
+      <!-- Plateau et corps -->
+      <polygon points="-75,10 75,10 65,220 -65,220" fill="#102C49" stroke="#204564" stroke-width="2" />
+      <rect x="-85" y="0" width="170" height="14" rx="2" fill="#183B5C" stroke="#AD8B60" stroke-width="1.5" />
+      
+      <!-- Microphones -->
+      <line x1="-25" y1="0" x2="-18" y2="-25" stroke="#CBD5E1" stroke-width="2.5" />
+      <circle cx="-18" cy="-28" r="4" fill="#334155" />
+      <line x1="25" y1="0" x2="18" y2="-25" stroke="#CBD5E1" stroke-width="2.5" />
+      <circle cx="18" cy="-28" r="4" fill="#334155" />
+
+      <!-- Sceau Présidentiel JEM sur le devant du pupitre -->
+      <circle cx="0" cy="90" r="38" fill="#0B2748" stroke="#AD8B60" stroke-width="3" />
+      <circle cx="0" cy="90" r="33" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="2 2" />
+      <polygon points="0,68 2,74 8,74 4,78 6,85 0,81 -6,85 -4,78 -8,74 -2,74" fill="#AD8B60" />
+      <text x="0" y="103" font-family="'Merriweather', Georgia, serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">JEM</text>
+    </g>
+  </g>
+
+  <!-- 5. Tapis cérémonial et public officiel au premier plan -->
+  <!-- Tapis classique or et vert d'eau (style White House) -->
+  <ellipse cx="350" cy="740" rx="420" ry="160" fill="#D4E4DC" stroke="#ECC856" stroke-width="4" />
+  <ellipse cx="350" cy="740" rx="360" ry="120" fill="#C5DACE" stroke="#B88E1F" stroke-width="2" stroke-dasharray="6 4" />
+
+  <!-- Silhouette des dignitaires et officiels applaudissant (exactement comme dans la capture) -->
+  <g fill="#071B32">
+    <!-- Personnalité gauche applaudissant -->
+    <path d="M 60,420 C 80,400 120,400 135,430 L 145,680 L 45,680 Z" fill="#142F4C" />
+    <circle cx="95" cy="380" r="28" fill="#142F4C" />
+    <!-- Mains qui applaudissent -->
+    <circle cx="135" cy="450" r="10" fill="#D1A784" />
+    <circle cx="145" cy="445" r="9" fill="#D1A784" />
+
+    <!-- Personnalité droite de dos observant la tribune -->
+    <path d="M 540,400 C 560,380 620,380 645,410 L 665,680 L 525,680 Z" fill="#102C49" />
+    <circle cx="590" cy="360" r="30" fill="#102C49" />
+
+    <!-- Invités au premier plan en bas -->
+    <ellipse cx="180" cy="790" rx="70" ry="90" fill="#06172C" />
+    <ellipse cx="320" cy="800" rx="75" ry="95" fill="#06172C" />
+    <ellipse cx="480" cy="790" rx="70" ry="90" fill="#06172C" />
+  </g>
+
+  <!-- Plaque d'authenticité éditoriale -->
+  <rect x="0" y="792" width="700" height="8" fill="#AD8B60" />
+</svg>

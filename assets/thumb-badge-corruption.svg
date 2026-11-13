@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200" role="img" aria-label="Ordre et Loi — Zéro Tolérance">
+  <rect width="300" height="200" fill="#071B32" />
+  <rect x="15" y="15" width="270" height="170" fill="none" stroke="#AD8B60" stroke-width="1.5" stroke-dasharray="4 2" />
+  <g transform="translate(150, 68)">
+    <text x="0" y="0" font-family="'Source Sans 3', sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle" letter-spacing="3.5">ORDRE &amp; LOI</text>
+    <text x="0" y="36" font-family="'Merriweather', Georgia, serif" font-weight="900" font-size="22" fill="#AD8B60" text-anchor="middle" letter-spacing="1">ZÉRO TOLÉRANCE</text>
+    <line x1="-70" y1="52" x2="70" y2="52" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.6" />
+    <text x="0" y="74" font-family="'Source Sans 3', sans-serif" font-weight="800" font-size="11" fill="#E2E8F0" text-anchor="middle" letter-spacing="3">POUR LA RÉPUBLIQUE</text>
+  </g>
+</svg>

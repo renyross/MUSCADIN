@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img" aria-label="Sécurité territoriale et protection des routes">
+  <defs>
+    <linearGradient id="bgSec" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141E28" />
+      <stop offset="100%" stop-color="#2B3E50" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bgSec)" />
+  <!-- Tracé de la Route Nationale sécurisée vers l'horizon -->
+  <polygon points="170,240 230,240 205,90 195,90" fill="#4A5666" />
+  <line x1="200" y1="240" x2="200" y2="100" stroke="#AD8B60" stroke-width="3" stroke-dasharray="10 8" />
+  <!-- Montagnes d'Haïti en fond -->
+  <polygon points="0,150 80,100 170,140 280,80 400,160 400,240 0,240" fill="#1C2733" />
+  <!-- Bouclier de protection républicain -->
+  <g transform="translate(200, 85)">
+    <path d="M 0,-45 C 35,-45 45,-25 45,5 C 45,40 15,65 0,78 C -15,65 -45,40 -45,5 C -45,-25 -35,-45 0,-45 Z" fill="#0B2748" stroke="#AD8B60" stroke-width="3" />
+    <!-- Étoile centrale -->
+    <polygon points="0,-18 4,-6 16,-6 6,2 10,14 0,6 -10,14 -6,2 -16,-6 -4,-6" fill="#AD8B60" />
+    <text x="0" y="38" font-family="'Merriweather', Georgia, serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">LOI</text>
+  </g>
+  <rect x="0" y="235" width="400" height="5" fill="#AD8B60" />
+</svg>

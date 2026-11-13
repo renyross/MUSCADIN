@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 84" width="460" height="84" role="img" aria-label="Logo officiel Jean Ernest Muscadin version fond sombre">
+  <defs>
+    <linearGradient id="goldCurveWhite" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AD8B60" />
+      <stop offset="100%" stop-color="#C6AA84" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sceau Officiel Présidentiel JEM sur fond sombre -->
+  <g transform="translate(6, 6)">
+    <circle cx="36" cy="36" r="35" fill="rgba(255, 255, 255, 0.08)" stroke="#AD8B60" stroke-width="2.5"/>
+    <circle cx="36" cy="36" r="30" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="2 2" stroke-opacity="0.7"/>
+    
+    <!-- Courbe d'action dynamique jaune -->
+    <path d="M 14 46 Q 36 14, 58 26 Q 38 36, 20 52 Z" fill="url(#goldCurveWhite)"/>
+    
+    <!-- Étoile -->
+    <polygon points="36,16 38,22 44,22 39,26 41,32 36,28 31,32 33,26 28,22 34,22" fill="#AD8B60" />
+    
+    <!-- Initiales JEM -->
+    <text x="36" y="47" font-family="'Merriweather', Georgia, serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">JEM</text>
+  </g>
+
+  <!-- Typographie Présidentielle : Version contrastée blanche et or -->
+  <g transform="translate(90, 16)">
+    <text x="0" y="14" font-family="'Source Sans 3', 'Source Sans Pro', -apple-system, sans-serif" font-weight="800" font-size="11" fill="#AD8B60" letter-spacing="3.5">RÉPUBLIQUE D'HAÏTI</text>
+    <text x="0" y="40" font-family="'Merriweather', Georgia, 'Times New Roman', serif" font-weight="900" font-size="24" fill="#FFFFFF" letter-spacing="0.5">JEAN ERNEST MUSCADIN</text>
+    
+    <line x1="0" y1="48" x2="330" y2="48" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.8" />
+    <line x1="0" y1="52" x2="330" y2="52" stroke="#AD8B60" stroke-width="2" />
+  </g>
+</svg>

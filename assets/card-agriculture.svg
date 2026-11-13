@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img" aria-label="Souveraineté alimentaire et production locale">
+  <defs>
+    <linearGradient id="bgAgri" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B2B1E" />
+      <stop offset="100%" stop-color="#2D4D32" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bgAgri)" />
+  <!-- Champs cultivés et sillons -->
+  <path d="M 0,160 Q 200,130 400,160 L 400,240 L 0,240 Z" fill="#243C28" />
+  <path d="M 0,185 Q 200,155 400,185" stroke="#AD8B60" stroke-width="2" stroke-opacity="0.6" fill="none" />
+  <path d="M 0,210 Q 200,180 400,210" stroke="#AD8B60" stroke-width="2" stroke-opacity="0.6" fill="none" />
+  <!-- Épis de céréales dorés / Soleil d'or -->
+  <circle cx="200" cy="70" r="38" fill="#AD8B60" fill-opacity="0.25" />
+  <g transform="translate(200, 105)">
+    <!-- Épi central -->
+    <path d="M 0,35 L 0,-45" stroke="#AD8B60" stroke-width="3" />
+    <!-- Grains -->
+    <ellipse cx="-12" cy="-30" rx="9" ry="5" fill="#AD8B60" transform="rotate(-30 -12 -30)" />
+    <ellipse cx="12" cy="-30" rx="9" ry="5" fill="#AD8B60" transform="rotate(30 12 -30)" />
+    <ellipse cx="-14" cy="-15" rx="10" ry="6" fill="#AD8B60" transform="rotate(-30 -14 -15)" />
+    <ellipse cx="14" cy="-15" rx="10" ry="6" fill="#AD8B60" transform="rotate(30 14 -15)" />
+    <ellipse cx="-14" cy="2" rx="10" ry="6" fill="#AD8B60" transform="rotate(-30 -14 2)" />
+    <ellipse cx="14" cy="2" rx="10" ry="6" fill="#AD8B60" transform="rotate(30 14 2)" />
+  </g>
+  <rect x="0" y="235" width="400" height="5" fill="#AD8B60" />
+</svg>

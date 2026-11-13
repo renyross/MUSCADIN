@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240" role="img" aria-label="Justice et État de droit">
+  <defs>
+    <linearGradient id="bgJust" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142B43" />
+      <stop offset="100%" stop-color="#081E38" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bgJust)" />
+  <!-- Colonnes d'un palais de justice classique -->
+  <g fill="#FFFFFF" fill-opacity="0.12">
+    <rect x="40" y="50" width="24" height="150" />
+    <rect x="110" y="50" width="24" height="150" />
+    <rect x="180" y="50" width="24" height="150" />
+    <rect x="250" y="50" width="24" height="150" />
+    <rect x="320" y="50" width="24" height="150" />
+    <polygon points="20,50 200,10 380,50" />
+  </g>
+  <!-- Balance de la Justice en or -->
+  <g transform="translate(200, 115)">
+    <line x1="0" y1="-60" x2="0" y2="60" stroke="#AD8B60" stroke-width="4" />
+    <line x1="-70" y1="-40" x2="70" y2="-40" stroke="#AD8B60" stroke-width="3" />
+    <!-- Plateau gauche -->
+    <line x1="-70" y1="-40" x2="-90" y2="10" stroke="#FFFFFF" stroke-width="1.5" />
+    <line x1="-70" y1="-40" x2="-50" y2="10" stroke="#FFFFFF" stroke-width="1.5" />
+    <path d="M -100,10 Q -70,30 -40,10 Z" fill="#AD8B60" />
+    <!-- Plateau droit -->
+    <line x1="70" y1="-40" x2="50" y2="10" stroke="#FFFFFF" stroke-width="1.5" />
+    <line x1="70" y1="-40" x2="90" y2="10" stroke="#FFFFFF" stroke-width="1.5" />
+    <path d="M 40,10 Q 70,30 100,10 Z" fill="#AD8B60" />
+    <!-- Socle -->
+    <rect x="-35" y="60" width="70" height="8" rx="2" fill="#AD8B60" />
+  </g>
+  <rect x="0" y="235" width="400" height="5" fill="#AD8B60" />
+</svg>

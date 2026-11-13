@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 84" width="460" height="84" role="img" aria-label="Logo officiel Jean Ernest Muscadin">
+  <defs>
+    <linearGradient id="goldCurve" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AD8B60" />
+      <stop offset="100%" stop-color="#AD8B60" />
+    </linearGradient>
+    <filter id="sealShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#142B43" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Sceau Officiel Présidentiel JEM -->
+  <g transform="translate(6, 6)">
+    <!-- Anneau extérieur or/jaune -->
+    <circle cx="36" cy="36" r="35" fill="#0B2748" stroke="#AD8B60" stroke-width="2.5" filter="url(#sealShadow)"/>
+    <!-- Cercle intérieur pointillé républicain -->
+    <circle cx="36" cy="36" r="30" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="2 2" stroke-opacity="0.6"/>
+    
+    <!-- Courbe d'action dynamique jaune -->
+    <path d="M 14 46 Q 36 14, 58 26 Q 38 36, 20 52 Z" fill="url(#goldCurve)"/>
+    
+    <!-- Étoile républicaine centrale -->
+    <polygon points="36,16 38,22 44,22 39,26 41,32 36,28 31,32 33,26 28,22 34,22" fill="#AD8B60" />
+    
+    <!-- Initiales présidentielles JEM -->
+    <text x="36" y="47" font-family="'Merriweather', Georgia, serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">JEM</text>
+  </g>
+
+  <!-- Typographie Présidentielle : Style White House -->
+  <g transform="translate(90, 16)">
+    <!-- Ligne de titre supérieure : RÉPUBLIQUE D'HAÏTI -->
+    <text x="0" y="14" font-family="'Source Sans 3', 'Source Sans Pro', -apple-system, sans-serif" font-weight="800" font-size="11" fill="#0B2748" letter-spacing="3.5">RÉPUBLIQUE D'HAÏTI</text>
+    
+    <!-- Nom officiel du candidat en serif majestueux -->
+    <text x="0" y="40" font-family="'Merriweather', Georgia, 'Times New Roman', serif" font-weight="900" font-size="24" fill="#142B43" letter-spacing="0.5">JEAN ERNEST MUSCADIN</text>
+    
+    <!-- Double filet officiel sous le nom : violet & filet or -->
+    <line x1="0" y1="48" x2="330" y2="48" stroke="#0B2748" stroke-width="1.5" />
+    <line x1="0" y1="52" x2="330" y2="52" stroke="#AD8B60" stroke-width="2" />
+  </g>
+</svg>
