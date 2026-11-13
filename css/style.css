@@ -2617,3 +2617,20 @@ section[id], details[id], #donationForm { scroll-margin-top: 95px; }
  .editorial-watermark { position: relative; left: auto; bottom: auto; transform: none; width: 100%; margin: 25px 0 -5vw; }
  .editorial-ticker { margin-top: 0; }
 }
+/* Réduction légère de la hauteur du formulaire de don. */
+.campaign-volunteer .donation-layout #donationForm { padding: 20px 24px; }
+.campaign-volunteer .donation-layout #donationForm fieldset { margin-bottom: 8px; }
+.donation-layout .donor-coordinates { gap: 8px; margin: 10px 0; }
+.campaign-volunteer .donation-layout #donationForm .support-options span { padding: 6px 5px; }
+.campaign-volunteer .donation-layout #donationForm textarea { height: 44px; min-height: 44px; }
+.campaign-volunteer .donation-layout #donationForm .support-counter { margin-bottom: 6px; }
+@media(max-width:480px) { .campaign-volunteer .donation-layout #donationForm { padding: 18px; } }
+/* Liens de navigation blancs sur le visuel du hero. */
+.editorial-header .nav-link,
+.editorial-header .nav-link.active,
+.editorial-header .nav-link:hover,
+.editorial-header .editorial-nav-end,
+.editorial-header .editorial-nav-end:hover { color: #fff; }
+/* Visuel fourni pour le hero. */
+.editorial-hero .campaign-hero-photo { background: linear-gradient(180deg,#06132120 10%,transparent 35%,#06132155 85%,#06132180),url('../assets/hero-muscadin-flag.png') center center / cover no-repeat; }
+@media(max-width:760px) { .editorial-hero .campaign-hero-photo { background-image: linear-gradient(90deg,#061321a6,#06132135),linear-gradient(0deg,#061321b3,transparent 75%),url('../assets/hero-muscadin-flag.png'); background-position: center,center,68% top; } }
