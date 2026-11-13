@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Jean Ernest Muscadin — Candidat à la présidence | Site Officiel</title>
+  
+  <!-- Métadonnées rigoureuses (Exactitude stricte du nom du candidat) -->
+  <meta name="description" content="Site officiel d'information de Jean Ernest Muscadin, candidat à la présidence en Haïti. Découvrez son parcours documenté, ses propositions de programme et son dialogue citoyen vérifié.">
+  <meta name="author" content="Équipe de campagne de Jean Ernest Muscadin">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph & Twitter Cards -->
+  <meta property="og:title" content="Jean Ernest Muscadin — Candidat à la présidence">
+  <meta property="og:description" content="Site officiel d'information et propositions programmatiques de Jean Ernest Muscadin pour la République d'Haïti.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero-banner-muscadin.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jean Ernest Muscadin — Candidat à la présidence">
+  <meta name="twitter:description" content="Site officiel d'information et propositions programmatiques de Jean Ernest Muscadin pour la République d'Haïti.">
+
+  <!-- Favicon officiel avec monogramme républicain JEM -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon-muscadin.svg">
+
+  <!-- Polices Google : Merriweather (Sérif d'autorité institutionnelle) & Source Sans 3 (Sans-sérif éditoriale claire) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Lien d'évitement pour l'accessibilité au clavier (WCAG 2.1 AA) -->
+  <a href="#main-content" class="skip-link">Aller directement au contenu principal</a>
+
+  <!-- BANNIÈRE SUPÉRIEURE D'ARCHIVE OFFICIELLE (STYLE BANNIÈRE TRUMP WHITE HOUSE ARCHIVES) -->
+  <div class="wh-top-banner" role="complementary" aria-label="Présentation du site">
+    <div class="wh-top-banner-content">
+      <svg class="wh-archive-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polyline points="12 6 12 12 16 14"></polyline>
+      </svg>
+      <span data-i18n="previewBanner.text">
+        Retrouvez le parcours, les priorités et les actualités de Jean Ernest Muscadin.
+      </span>
+      <a href="#cmsModal" onclick="document.getElementById('cmsModal').classList.add('active'); return false;" class="wh-top-banner-link" data-i18n="previewBanner.cmsLink">
+        • Console d'administration
+      </a>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       BARRE DE MENU OFFICIELLE (STYLE EXACT TRUMP WHITE HOUSE ARCHIVES)
+       [BURGER ☰] [LOGO: JEAN ERNEST MUSCADIN] [5 MENUS] [RECHERCHE 🔍 & LANGUES]
+       ==================================================================== -->
+  <header class="site-header wh-header editorial-header" role="banner">
+    <div class="editorial-topbar">
+      <a class="editorial-brand" href="#accueil" aria-label="Jean Ernest Muscadin, accueil"><span class="editorial-brand-dot" aria-hidden="true"></span><span>MUSCADIN</span></a>
+      <div class="wh-search-box" role="search"><input class="wh-search-input" id="whSearchInput" type="search" placeholder="Rechercher sur le site" aria-label="Rechercher sur le site"><button type="button" class="wh-search-btn" id="whSearchBtn" aria-label="Lancer la recherche"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg></button><span id="headerSearchStatus" class="editorial-search-status" role="status"></span></div>
+      <a class="editorial-subscribe" href="#faire-un-don"><span class="editorial-subscribe-icon" aria-hidden="true">↗</span><span>Rejoindre le mouvement<small>Ensemble pour Haïti</small></span></a>
+      <div class="lang-switch wh-lang-switch" role="group" aria-label="Choix de la langue"><button type="button" class="lang-btn wh-lang-btn active" data-lang="fr" aria-pressed="true">FR</button><span aria-hidden="true">/</span><button type="button" class="lang-btn wh-lang-btn" data-lang="ht" aria-pressed="false">HT</button></div>
+    </div>
+    <div class="editorial-navrow">
+      <button type="button" class="wh-hamburger-btn" id="mobileMenuBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileDrawer"><span class="wh-hamburger-line"></span><span class="wh-hamburger-line"></span><span class="wh-hamburger-line"></span></button>
+      <nav class="editorial-navigation" aria-label="Navigation principale"><ul class="nav-links wh-nav-links"><li><a href="#accueil" class="nav-link active" data-i18n="nav.home">Accueil</a></li><li><a href="#programme" class="nav-link" data-i18n="nav.program">Le programme</a></li><li><a href="#parcours" class="nav-link" data-i18n="nav.bio">Le parcours</a></li><li><a href="#actualites" class="nav-link" data-i18n="nav.news">Actualités</a></li><li><a href="#rendez-vous" class="nav-link">Rendez-vous</a></li><li><a href="#faire-un-don" class="nav-link">Faire un don</a></li><li><a href="#faire-un-don" class="nav-link" data-i18n="nav.participate">Participer</a></li></ul></nav>
+      <a class="editorial-nav-end" href="#programme" aria-label="Explorer les priorités">EXPLORER <span aria-hidden="true">▦</span></a>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       PAGE DE MENU PLEIN ÉCRAN (STYLE EXACT DE L'IMAGE 2 / TRUMP WHITE HOUSE)
+       [✕ GAUCHE] [🔍 DROITE] [LISTE TITRES AVEC FLÈCHES ▸] [SCEAU EN FILIGRANE GÉANT]
+       ==================================================================== -->
+  <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+  <aside class="wh-menu-overlay" id="mobileDrawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Menu principal du site">
+    
+    <!-- Barre supérieure de l'overlay : Croix ✕ à gauche & Recherche 🔍 à droite -->
+    <div class="wh-overlay-topbar">
+      <button type="button" class="wh-overlay-close-btn" id="drawerCloseBtn" aria-label="Fermer le menu">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <button type="button" class="wh-overlay-search-btn" id="overlaySearchTrigger" aria-label="Rechercher sur le site">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Corps de l'overlay : Navigation à Gauche & Sceau Géant en Filigrane à Droite -->
+    <div class="wh-overlay-body">
+      
+      <!-- Colonne Gauche : Liste des menus avec flèche bronze ▸ -->
+      <div class="wh-overlay-menu-col">
+        <nav class="wh-overlay-nav" aria-label="Menu complet">
+          <ul class="wh-overlay-list">
+            <li>
+              <a href="#accueil" class="wh-overlay-link active">
+                <span data-i18n="nav.home">Accueil</span>
+              </a>
+            </li>
+            <li>
+              <a href="#programme" class="wh-overlay-link">
+                <span data-i18n="nav.program">Le programme</span>
+                <span class="wh-overlay-arrow" aria-hidden="true">▸</span>
+              </a>
+            </li>
+            <li>
+              <a href="#parcours" class="wh-overlay-link">
+                <span data-i18n="nav.bio">Le parcours</span>
+                <span class="wh-overlay-arrow" aria-hidden="true">▸</span>
+              </a>
+            </li>
+            <li>
+              <a href="#actualites" class="wh-overlay-link">
+                <span data-i18n="nav.news">Actualités</span>
+                <span class="wh-overlay-arrow" aria-hidden="true">▸</span>
+              </a>
+            </li>
+            <li>
+              <a href="#faire-un-don" class="wh-overlay-link">
+                <span data-i18n="nav.participate">Participer</span>
+                <span class="wh-overlay-arrow" aria-hidden="true">▸</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Ligne de séparation fine style Image 2 -->
+          <div class="wh-overlay-divider"></div>
+
+          <!-- Liens secondaires (Style Image 2 : Live / Communiqués & Console) -->
+          <ul class="wh-overlay-sublist">
+            <li>
+              <a href="#actualites" class="wh-overlay-sublink">
+                <span>Communiqués officiels</span>
+              </a>
+            </li>
+            <li>
+              <a href="#cmsModal" onclick="document.getElementById('cmsModal').classList.add('active');" class="wh-overlay-sublink">
+                <span>Console d'administration</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Sélecteur bilingue épuré -->
+          <div class="wh-overlay-lang-box">
+            <span style="font-size:0.8125rem; color:#888888; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; margin-right:0.5rem;">Langue :</span>
+            <button type="button" class="lang-btn wh-overlay-lang-btn active" data-lang="fr" aria-pressed="true">FRANÇAIS</button>
+            <span style="color:#D0D0D0;">|</span>
+            <button type="button" class="lang-btn wh-overlay-lang-btn" data-lang="ht" aria-pressed="false">KREYÒL</button>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Colonne Droite : Sceau Présidentiel Géant en Filigrane (Style Image 2) -->
+      <div class="wh-overlay-seal-col" aria-hidden="true">
+        <img src="assets/seal-watermark-muscadin.svg" alt="" class="wh-overlay-watermark" width="560" height="560" loading="eager">
+      </div>
+
+    </div>
+
+  </aside>
+
+  <!-- ====================================================================
+       CONTENU PRINCIPAL : EXACTEMENT 5 SECTIONS
+       ==================================================================== -->
+  <main id="main-content">
+
+    <!-- ====================================================================
+         SECTION 1 : ACCUEIL / HERO PANORAMIQUE (STYLE EXACT DE LA 1ÈRE CAPTURE)
+         MINIMAL TEXTE : SEULEMENT LE GRAND TITRE EN DEUX TEMPS SUR FOND CINÉMATIQUE
+         ==================================================================== -->
+    <section class="campaign-hero editorial-hero" id="accueil" aria-labelledby="campaign-title">
+      <div class="campaign-hero-photo" role="img" aria-label="La Citadelle Laferrière et le drapeau haïtien"></div>
+      <div class="editorial-hero-inner">
+        <div class="editorial-featured" aria-label="À découvrir"><a href="#parcours"><img src="assets/haiti-press-conference.jpg" alt="" width="320" height="380"><span class="editorial-card-tag">PARCOURS</span><h2>Un engagement au service de la justice</h2></a><a href="#programme"><img src="assets/haiti-youth-education.jpg" alt="" width="320" height="380"><span class="editorial-card-tag">AVENIR</span><h2>Construire les perspectives de demain</h2></a></div>
+        <div class="editorial-lead"><span class="editorial-category">NOTRE ENGAGEMENT</span><h1 id="campaign-title">Et si nous écrivions<br>un nouvel avenir<br>pour Haïti ?</h1><div class="editorial-story-links"><a href="#programme"><span aria-hidden="true">→</span> Découvrir le projet</a><a href="#parcours">Le parcours</a><a href="#faire-un-don">S’engager ensemble</a></div></div>
+        <aside class="editorial-manifesto"><span aria-hidden="true">“</span><p>La justice, la sécurité et la dignité de chaque citoyen au cœur de notre engagement.</p><a href="#programme">Notre vision <span aria-hidden="true">↗</span></a></aside>
+      </div>
+      <div class="editorial-watermark" aria-hidden="true">MUSCADIN</div>
+      <div class="editorial-ticker" aria-label="Explorer le mouvement">
+        <a href="#programme"><img src="assets/haiti-justice-courthouse.jpg" alt="" width="90" height="75"><span><strong>La justice au cœur de l’État de droit</strong><small>Programme · Nos priorités</small></span></a>
+        <a href="#dossiers"><img src="assets/haiti-agriculture-fields.jpg" alt="" width="90" height="75"><span><strong>Valoriser la production nationale</strong><small>Économie · Nos dossiers</small></span></a>
+        <a href="#rendez-vous"><img src="assets/haiti-farmers-cooperative.jpg" alt="" width="90" height="75"><span><strong>À la rencontre des territoires</strong><small>Dialogue · Les rendez-vous</small></span></a>
+        <a href="#actualites"><img src="assets/haiti-youth-education.jpg" alt="" width="90" height="75"><span><strong>Les voix d’une nouvelle génération</strong><small>Engagement · Actualités</small></span></a>
+      </div>
+    </section>
+
+    <section class="engagement-strip" aria-label="Agir ensemble">
+      <div class="engagement-photo"><img src="assets/haiti-youth-education.jpg" alt="Jeunesse et éducation en Haïti" width="688" height="768"></div>
+      <div class="engagement-panel engagement-coral">
+        <span class="campaign-kicker">CHAQUE VOIX COMPTE</span>
+        <h2>Votre énergie.<br>Notre force collective.</h2>
+        <p>Prenez part au mouvement et faites entendre votre voix.</p>
+        <a class="campaign-button" href="#faire-un-don">Je m’engage <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="engagement-photo"><img src="assets/haiti-farmers-cooperative.jpg" alt="Coopération agricole en Haïti" width="688" height="768" loading="lazy"></div>
+      <div class="engagement-panel engagement-blue">
+        <span class="campaign-kicker">AGISSONS AUJOURD’HUI</span>
+        <h2>Un avenir meilleur commence avec vous.</h2>
+        <p>Contribuez à porter un projet commun pour Haïti.</p>
+        <a class="campaign-button" href="#donationForm">Soutenir le mouvement <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="campaign-about" id="parcours">
+      <div class="container campaign-about-grid">
+        <div class="campaign-collage">
+          <img class="collage-back" src="assets/haiti-youth-education.jpg" alt="Une jeunesse tournée vers l’avenir" width="430" height="480" loading="lazy">
+          <img class="collage-front" src="assets/haiti-press-conference.jpg" alt="Prise de parole et dialogue public" width="430" height="480" loading="lazy">
+          <a class="collage-link" href="#parcours-detail" aria-label="Découvrir le parcours"><span aria-hidden="true">↗</span></a>
+          <span class="collage-caption">UNE VISION COMMUNE POUR HAÏTI</span>
+        </div>
+        <div class="campaign-about-copy">
+          <span class="campaign-eyebrow">NOTRE ENGAGEMENT</span>
+          <h2>Une conviction forte.<br>Un avenir à construire ensemble.</h2>
+          <p>La justice, la sécurité et la dignité de chaque citoyen sont au cœur de notre démarche pour Haïti.</p>
+          <div class="campaign-tabs" role="tablist" aria-label="Notre démarche">
+            <button type="button" role="tab" id="mission-tab" aria-controls="mission-panel" aria-selected="true">Notre mission</button>
+            <button type="button" role="tab" id="vision-tab" aria-controls="vision-panel" aria-selected="false" tabindex="-1">Notre vision</button>
+          </div>
+          <div class="campaign-tab-panel" id="mission-panel" role="tabpanel" aria-labelledby="mission-tab">Restaurer la confiance dans les institutions, défendre l’État de droit et placer la sécurité des citoyens au centre de l’action publique.</div>
+          <div class="campaign-tab-panel" id="vision-panel" role="tabpanel" aria-labelledby="vision-tab" hidden>Une Haïti souveraine, juste et solidaire, où chaque territoire et chaque génération peuvent contribuer à la prospérité nationale.</div>
+          <details id="parcours-detail" class="campaign-bio"><summary>Découvrir le parcours <span aria-hidden="true">↗</span></summary><p>Magistrat haïtien de formation, Jean Ernest Muscadin est connu pour ses fonctions de Commissaire du Gouvernement près le Tribunal de Première Instance de Miragoâne, dans le département des Nippes.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="campaign-movement" id="programme">
+      <div class="container movement-heading"><div><span class="campaign-eyebrow">LES PRIORITÉS QUI NOUS RASSEMBLENT</span><h2>Notre mouvement</h2><p>Des engagements concrets pour faire avancer Haïti, ensemble.</p></div><a href="#programme-details">Découvrir le programme <span aria-hidden="true">↗</span></a></div>
+      <div class="movement-grid">
+<a href="#programme-details" class="movement-card" data-view-proposal="justice-securite-1"><img src="assets/haiti-justice-courthouse.jpg" alt="Justice & État de droit" width="500" height="440" loading="lazy"><span class="movement-number">01</span><h3>Justice & État de droit</h3><span class="movement-arrow" aria-hidden="true">↗</span></a>
+<a href="#programme-details" class="movement-card" data-view-proposal="institutions-transparence-4"><img src="assets/haiti-youth-education.jpg" alt="Jeunesse & éducation" width="500" height="440" loading="lazy"><span class="movement-number">02</span><h3>Jeunesse & éducation</h3><span class="movement-arrow" aria-hidden="true">↗</span></a>
+<a href="#programme-details" class="movement-card" data-view-proposal="economie-souverainete-2"><img src="assets/haiti-agriculture-fields.jpg" alt="Production nationale" width="500" height="440" loading="lazy"><span class="movement-number">03</span><h3>Production nationale</h3><span class="movement-arrow" aria-hidden="true">↗</span></a>
+<a href="#programme-details" class="movement-card" data-view-proposal="territoire-decentralisation-3"><img src="assets/haiti-decentralization-provinces.jpg" alt="Des territoires plus forts" width="500" height="440" loading="lazy"><span class="movement-number">04</span><h3>Des territoires plus forts</h3><span class="movement-arrow" aria-hidden="true">↗</span></a>
+<a href="#programme-details" class="movement-card" data-view-proposal="justice-securite-1"><img src="assets/haiti-security-rn2.jpg" alt="Sécurité pour tous" width="500" height="440" loading="lazy"><span class="movement-number">05</span><h3>Sécurité pour tous</h3><span class="movement-arrow" aria-hidden="true">↗</span></a>
+<a href="#programme-details" class="movement-card" data-view-proposal="institutions-transparence-4"><img src="assets/haiti-transparency-charter.jpg" alt="Institutions & transparence" width="500" height="440" loading="lazy"><span class="movement-number">06</span><h3>Institutions & transparence</h3><span class="movement-arrow" aria-hidden="true">↗</span></a>
+<a href="#programme-details" class="movement-card" data-view-proposal="economie-souverainete-2"><img src="assets/haiti-farmers-cooperative.jpg" alt="Économie & souveraineté" width="500" height="440" loading="lazy"><span class="movement-number">07</span><h3>Économie & souveraineté</h3><span class="movement-arrow" aria-hidden="true">↗</span></a>
+<a href="#programme-details" class="movement-card" data-view-proposal="territoire-decentralisation-3"><img src="assets/haiti-hero-presidential.jpg" alt="Une ambition nationale" width="500" height="440" loading="lazy"><span class="movement-number">08</span><h3>Une ambition nationale</h3><span class="movement-arrow" aria-hidden="true">↗</span></a>
+      </div>
+      <details id="programme-details" class="container campaign-program-details"><summary>Consulter les propositions détaillées</summary><div id="proposalsContainer" class="proposals-grid"></div></details>
+    </section>
+
+    <section class="campaign-dossiers" id="dossiers" aria-labelledby="dossiers-title">
+      <div class="container carousel-section" data-carousel>
+        <div class="carousel-heading"><div><span class="campaign-eyebrow">COMPRENDRE POUR AGIR</span><h2 id="dossiers-title">Les défis d’aujourd’hui.<br>Les solutions de demain.</h2></div></div>
+        <div class="carousel-controls"><button type="button" data-direction="-1" aria-label="Dossiers précédents">← <span>Précédent</span></button><button type="button" data-direction="1" aria-label="Dossiers suivants"><span>Suivant</span> →</button></div>
+        <div class="campaign-carousel" tabindex="0" role="region" aria-label="Dossiers du programme">
+<a class="carousel-card dossier-card" href="#programme-details" data-view-proposal="economie-souverainete-2"><img src="assets/haiti-agriculture-fields.jpg" alt="" width="550" height="440" loading="lazy"><h3>Produire ici : le potentiel de notre agriculture</h3><span class="card-read">Explorer le dossier ↗</span></a>
+<a class="carousel-card dossier-card" href="#programme-details" data-view-proposal="territoire-decentralisation-3"><img src="assets/haiti-decentralization-provinces.jpg" alt="" width="550" height="440" loading="lazy"><h3>Donner à chaque territoire les moyens d’avancer</h3><span class="card-read">Explorer le dossier ↗</span></a>
+<a class="carousel-card dossier-card" href="#programme-details" data-view-proposal="justice-securite-1"><img src="assets/haiti-justice-courthouse.jpg" alt="" width="550" height="440" loading="lazy"><h3>Faire de la justice un pilier de la confiance</h3><span class="card-read">Explorer le dossier ↗</span></a>
+<a class="carousel-card dossier-card" href="#programme-details" data-view-proposal="institutions-transparence-4"><img src="assets/haiti-transparency-charter.jpg" alt="" width="550" height="440" loading="lazy"><h3>Des institutions responsables et transparentes</h3><span class="card-read">Explorer le dossier ↗</span></a>
+<a class="carousel-card dossier-card" href="#programme-details" data-view-proposal="justice-securite-1"><img src="assets/haiti-security-rn2.jpg" alt="" width="550" height="440" loading="lazy"><h3>La sécurité, une priorité pour tous</h3><span class="card-read">Explorer le dossier ↗</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="campaign-gatherings" id="rendez-vous" aria-labelledby="gatherings-title">
+      <div class="container carousel-section" data-carousel>
+        <div class="carousel-heading"><div><span class="campaign-eyebrow">LE DIALOGUE NOUS RASSEMBLE</span><h2 id="gatherings-title">Nos prochains rendez-vous</h2><p>Sur le terrain et à vos côtés, faisons vivre le dialogue citoyen.</p></div><div class="carousel-controls"><button type="button" data-direction="-1" aria-label="Rendez-vous précédents">← <span>Précédent</span></button><button type="button" data-direction="1" aria-label="Rendez-vous suivants"><span>Suivant</span> →</button></div></div>
+        <div class="campaign-carousel" tabindex="0" role="region" aria-label="Formats des prochains rendez-vous">
+<article class="carousel-card gathering-card"><div class="gathering-image"><img src="assets/haiti-farmers-cooperative.jpg" alt="" width="550" height="480" loading="lazy"><span>Dates à venir</span></div><span class="gathering-tag">SUR LE TERRAIN</span><h3>À la rencontre des territoires</h3><p>Échanger sur les besoins locaux et les priorités de chaque département.</p><a href="#footerEmail">Être informé des dates <span aria-hidden="true">↗</span></a></article>
+<article class="carousel-card gathering-card"><div class="gathering-image"><img src="assets/haiti-youth-education.jpg" alt="" width="550" height="480" loading="lazy"><span>Dates à venir</span></div><span class="gathering-tag">DIALOGUE CITOYEN</span><h3>La parole à la jeunesse</h3><p>Ouvrir la discussion sur la formation, les perspectives et l’engagement.</p><a href="#footerEmail">Être informé des dates <span aria-hidden="true">↗</span></a></article>
+<article class="carousel-card gathering-card"><div class="gathering-image"><img src="assets/haiti-press-conference.jpg" alt="" width="550" height="480" loading="lazy"><span>Dates à venir</span></div><span class="gathering-tag">PRISE DE PAROLE</span><h3>Un projet à partager</h3><p>Retrouver les échanges autour des grandes orientations du programme.</p><a href="#footerEmail">Être informé des dates <span aria-hidden="true">↗</span></a></article>
+<article class="carousel-card gathering-card"><div class="gathering-image"><img src="assets/haiti-agriculture-fields.jpg" alt="" width="550" height="480" loading="lazy"><span>Dates à venir</span></div><span class="gathering-tag">ÉCONOMIE LOCALE</span><h3>Échanger avec les producteurs</h3><p>Faire une place aux acteurs de la production nationale dans le débat.</p><a href="#footerEmail">Être informé des dates <span aria-hidden="true">↗</span></a></article>
+        </div><p class="gatherings-note">Le calendrier sera annoncé prochainement. Abonnez-vous pour recevoir les dates et les lieux.</p>
+      </div>
+    </section>
+
+    <section class="campaign-volunteer" id="faire-un-don" aria-labelledby="volunteer-title">
+      <div class="container">
+        <div class="donation-layout">
+        <div class="donation-copy">
+        <span class="campaign-eyebrow">PRENEZ PART AU CHANGEMENT</span>
+        <h2 id="volunteer-title">Faites un don</h2>
+        <p class="volunteer-intro">Chaque contribution compte. Soutenez nos actions<br>et participez à un avenir commun pour Haïti.</p>
+        </div>
+        <form class="support-panel campaign-donation-form" id="donationForm" data-support-form>
+          <fieldset>
+            <legend>Fréquence</legend>
+            <div class="support-options support-frequency">
+              <label><input type="radio" name="frequency" value="once" checked><span>Unique</span></label>
+              <label><input type="radio" name="frequency" value="monthly"><span>Mensuel</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Montant</legend>
+            <div class="support-options support-amounts">
+              <label><input type="radio" name="amount" value="10" checked><span>10 $US</span></label>
+              <label><input type="radio" name="amount" value="20"><span>20 $US</span></label>
+              <label><input type="radio" name="amount" value="50"><span>50 $US</span></label>
+              <label><input type="radio" name="amount" value="100"><span>100 $US</span></label>
+              <label><input type="radio" name="amount" value="other"><span>Autre</span></label>
+            </div>
+          </fieldset>
+          <div id="customAmountField" hidden>
+            <label for="customAmount">Montant libre en $US</label>
+            <input id="customAmount" type="number" min="1" step="0.01" inputmode="decimal" disabled>
+          </div>
+          <div class="donor-coordinates">
+            <div><label for="donorName">Nom complet *</label><input id="donorName" name="name" autocomplete="name" required placeholder="Votre nom"></div>
+            <div><label for="donorEmail">E-mail *</label><input id="donorEmail" name="email" type="email" autocomplete="email" required placeholder="Votre e-mail"></div>
+            <div><label for="donorPhone">Téléphone *</label><input id="donorPhone" name="phone" type="tel" autocomplete="tel" required placeholder="Votre numéro"></div>
+          </div>
+          <label for="donationComment">Commentaire <span>(facultatif)</span></label>
+          <textarea id="donationComment" maxlength="100" rows="3"></textarea>
+          <div class="support-counter" id="donationCounter">0/100</div>
+          <button class="support-submit" type="submit" id="donationSubmit">Faire un don de 10 $US</button>
+          <p class="support-note">Les dons ne sont pas encore ouverts. Aucun paiement n’est effectué depuis ce formulaire.</p>
+          <p class="support-feedback" role="status"></p>
+        </form>
+        </div>
+        <div class="volunteer-values" aria-label="Un engagement collectif">
+          <div><span class="value-icon" aria-hidden="true">⌂</span><p><strong>10</strong><span>Départements, un même pays</span></p></div>
+          <div><span class="value-icon" aria-hidden="true">◎</span><p><strong>Ensemble</strong><span>Citoyens d’Haïti et de la diaspora</span></p></div>
+          <div><span class="value-icon" aria-hidden="true">◇</span><p><strong>Une vision</strong><span>Justice, sécurité et dignité</span></p></div>
+          <div><span class="value-icon" aria-hidden="true">↗</span><p><strong>Avec vous</strong><span>Un avenir à construire</span></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="campaign-newsroom" id="actualites" aria-labelledby="newsroom-title">
+      <div class="container">
+        <div class="newsroom-heading"><span class="campaign-eyebrow">AU CŒUR DU MOUVEMENT</span><h2 id="newsroom-title">Notre espace d’actualités</h2><p>Nos engagements, nos priorités et les idées qui nous rassemblent.</p></div>
+        <div class="newsroom-grid">
+<article class="newsroom-card"><img src="assets/haiti-farmers-cooperative.jpg" alt="" width="550" height="340" loading="lazy"><div class="newsroom-card-body"><span class="newsroom-category">VIE LOCALE</span><h3>Faire entendre les voix de nos territoires</h3><details><summary>Lire la suite <span aria-hidden="true">↗</span></summary><p>La participation citoyenne donne toute sa place aux réalités locales. Échanger avec les habitants, écouter les producteurs et comprendre les besoins des départements nourrissent une démarche commune.</p></details></div></article><article class="newsroom-card"><img src="assets/haiti-youth-education.jpg" alt="" width="550" height="340" loading="lazy"><div class="newsroom-card-body"><span class="newsroom-category">ENGAGEMENT</span><h3>Une jeunesse actrice de son avenir</h3><details><summary>Lire la suite <span aria-hidden="true">↗</span></summary><p>L’éducation, la formation et l’engagement des jeunes sont essentiels pour construire l’avenir. Notre démarche invite chaque génération à prendre part au dialogue citoyen et à partager ses idées.</p></details></div></article><article class="newsroom-card"><img src="assets/haiti-republican-tribune.jpg" alt="" width="550" height="340" loading="lazy"><div class="newsroom-card-body"><span class="newsroom-category">NOTRE VISION</span><h3>Justice et sécurité : les fondations de demain</h3><details><summary>Lire la suite <span aria-hidden="true">↗</span></summary><p>Restaurer la confiance dans les institutions et défendre la dignité de chaque citoyen sont au cœur de notre vision. Retrouvez dans le programme les orientations consacrées à la justice, à la sécurité et à la transparence.</p></details></div></article>        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- ====================================================================
+       PIED DE PAGE (FOOTER STYLE WHITE HOUSE)
+       ==================================================================== -->
+  <section class="campaign-contact-band" aria-label="Coordonnées du mouvement">
+    <div class="container contact-band-grid">
+      <div class="contact-band-item"><span class="contact-band-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V7l8-4 8 4v14M8 21v-5h8v5M8 8h1m6 0h1M8 12h1m6 0h1"/></svg></span><div><h2>Notre permanence</h2><p>Adresse communiquée prochainement<br>Haïti</p></div></div>
+      <div class="contact-band-item"><span class="contact-band-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg></span><div><h2>Gardons le contact</h2><a href="#footerEmail">Recevoir nos actualités <span aria-hidden="true">↗</span></a><p>E-mail de contact à venir</p></div></div>
+      <div class="contact-band-item"><span class="contact-band-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m7 3 3 5-2 2a14 14 0 0 0 6 6l2-2 5 3-2 4C10 22 2 14 3 5Z"/></svg></span><div><h2>Nous joindre</h2><p>Ligne téléphonique à venir</p><a href="#faire-un-don">Soutenir le mouvement <span aria-hidden="true">↗</span></a></div></div>
+    </div>
+  </section>
+  <footer class="site-footer campaign-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="editorial-brand footer-wordmark" href="#accueil" aria-label="Jean Ernest Muscadin, retour à l’accueil"><span class="editorial-brand-dot" aria-hidden="true"></span><span>MUSCADIN</span></a>
+          <p class="footer-desc" data-i18n="footer.desc">Découvrez le parcours, les priorités et les actualités de Jean Ernest Muscadin.</p>
+          <a class="footer-brand-link" href="#faire-un-don">Ensemble pour Haïti <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="footer-col"><h4>Liens utiles</h4><ul class="footer-links">
+          <li><a href="#accueil" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="#parcours" data-i18n="nav.bio">Le parcours</a></li>
+          <li><a href="#programme" data-i18n="nav.program">Le programme</a></li>
+          <li><a href="#rendez-vous">Les rendez-vous</a></li>
+          <li><a href="#actualites" data-i18n="nav.news">Actualités</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Agir &amp; s’informer</h4><ul class="footer-links">
+          <li><a href="#faire-un-don">Faire un don</a></li>
+          <li><a href="#donationForm">Soutenir le mouvement</a></li>
+          <li><a href="#dossiers">Nos dossiers</a></li>
+          <li><a href="#legalModal" data-open-legal>Mentions légales</a></li>
+          <li><a href="#legalModal" data-open-legal>Confidentialité</a></li>
+        </ul></div>
+        <div class="footer-col footer-newsletter"><h4>Restons en contact</h4><p>Recevez les nouvelles du mouvement et nos prochains rendez-vous.</p>
+          <form id="footerNewsletter" data-footer-newsletter>
+            <label class="footer-email-label" for="footerEmail">Votre adresse e-mail</label>
+            <input id="footerEmail" name="email" type="email" autocomplete="email" placeholder="Votre e-mail" required>
+            <label class="footer-consent"><input type="checkbox" required><span>J’accepte de recevoir les actualités.</span></label>
+            <button type="submit" class="campaign-button">S’abonner <span aria-hidden="true">↗</span></button>
+            <p class="footer-newsletter-feedback" role="status">Inscriptions prochainement ouvertes.</p>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom"><div data-i18n="footer.copyright">© 2026 Jean Ernest Muscadin. Tous droits réservés.</div><a href="#accueil" class="footer-back-top">Retour en haut ↑</a></div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       MODAL 1 : FICHE DÉTAILLÉE D'UNE PROPOSITION DU PROGRAMME (11 CRITÈRES DU BRIEF)
+       ==================================================================== -->
+  <div class="modal-backdrop" id="proposalModal" role="dialog" aria-modal="true" aria-labelledby="modalSheetTitle">
+    <div class="modal-sheet">
+      <div class="modal-sheet-header">
+        <span style="font-weight:800; font-size:0.85rem; color:var(--color-violet);" id="modalSheetTitle">
+          FICHE D'ORIENTATION PROGRAMMATIQUE (11 RUBRIQUES)
+        </span>
+        <div style="display:flex; align-items:center; gap:0.5rem;">
+          <button type="button" class="btn btn-secondary btn-sm" id="printProposalBtn" title="Imprimer cette fiche">
+            🖨️ Imprimer
+          </button>
+          <button type="button" class="drawer-close" id="modalCloseBtn" aria-label="Fermer la fiche">&times;</button>
+        </div>
+      </div>
+      <div class="modal-sheet-body" id="modalSheetContent">
+        <!-- Rempli par app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 2 : PRÉVISUALISATION DE LA CONSOLE D'ADMINISTRATION / CMS
+       ==================================================================== -->
+  <div class="cms-modal" id="cmsModal" role="dialog" aria-modal="true" aria-labelledby="cmsModalTitle">
+    <div class="cms-window">
+      <div class="cms-header">
+        <div style="display:flex; align-items:center; gap:0.75rem;">
+          <span style="background-color:var(--color-yellow); color:#142B43; font-size:0.75rem; font-weight:900; padding:0.2rem 0.5rem; border-radius:4px;">CMS ADMIN</span>
+          <span id="cmsModalTitle" style="font-weight:700;">Plateforme de Gestion Éditoriale — Jean Ernest Muscadin</span>
+        </div>
+        <button type="button" class="drawer-close" id="closeCmsBtn" style="color:#FFFFFF;" aria-label="Fermer la console">&times;</button>
+      </div>
+      <div class="cms-body">
+        <aside class="cms-sidebar">
+          <div style="font-size:0.75rem; font-weight:800; text-transform:uppercase; color:var(--color-text-muted); margin-bottom:0.75rem;">Modules de gestion</div>
+          <button type="button" class="cms-menu-item active">📄 Pages &amp; Contenus (5 Sections)</button>
+          <button type="button" class="cms-menu-item">🏛️ Propositions (11 critères)</button>
+          <button type="button" class="cms-menu-item">📰 Actualités &amp; Médias</button>
+          <button type="button" class="cms-menu-item">📅 Agenda Public</button>
+          <button type="button" class="cms-menu-item">💬 Questions &amp; Modération</button>
+          <button type="button" class="cms-menu-item">🌐 Versions Linguistiques (FR/HT)</button>
+          <button type="button" class="cms-menu-item">🛡️ Rôles &amp; Accès sécurisés</button>
+        </aside>
+        <div>
+          <h3 style="color:var(--color-violet); font-size:1.25rem; margin-bottom:0.5rem;">Workflow de validation éditoriale</h3>
+          <p style="font-size:0.875rem; color:var(--color-text-muted); margin-bottom:1.25rem;">
+            Séparation stricte des privilèges : les rédacteurs créent les brouillons bilingues, le pôle juridique vérifie les pièces documentaires, et seul le directeur habilité dispose du droit de publication immédiate.
+          </p>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1.5rem;">
+            <div style="background-color:var(--color-secondary); padding:1rem; border-radius:4px; border-left:3px solid #2E7D32;">
+              <strong style="font-size:0.85rem; color:#2E7D32;">BROUILLONS PRÊTS (4)</strong>
+              <div style="font-size:0.8125rem; color:var(--color-text-muted); margin-top:0.25rem;">
+                • Fiche Réforme Foncière<br>
+                • Communiqué n°02 Sécurité<br>
+                • Traduction créole de la biographie
+              </div>
+            </div>
+            <div style="background-color:var(--color-secondary); padding:1rem; border-radius:4px; border-left:3px solid var(--color-yellow);">
+              <strong style="font-size:0.85rem; color:#B78103;">EN ATTENTE DE PIÈCES (2)</strong>
+              <div style="font-size:0.8125rem; color:var(--color-text-muted); margin-top:0.25rem;">
+                • Attestation universitaire officielle<br>
+                • Fichier vectoriel HD du logo FCN
+              </div>
+            </div>
+          </div>
+
+          <div style="background-color:#F3F5F7; border:1px solid var(--color-border); padding:1rem; border-radius:4px; font-size:0.8125rem;">
+            <strong>Journal d'audit et historique des révisions :</strong><br>
+            • <em>03/11/2026 01:45</em> : Structuration stricte en 5 sections principales et 5 menus de navigation.<br>
+            • <em>02/11/2026 23:45</em> : Déploiement de la version de prévisualisation responsive White House style.<br>
+            • <em>02/11/2026 20:12</em> : Intégration de la fiche programme 11 points (Justice &amp; Sécurité).
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 5 : CONFIDENTIALITÉ ET MENTIONS LÉGALES
+       ==================================================================== -->
+  <div class="modal-backdrop" id="legalModal" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+    <div class="modal-sheet" style="max-width:760px;">
+      <div class="modal-sheet-header">
+        <span style="font-weight:800; color:var(--color-violet);" id="legalModalTitle">
+          CONFIDENTIALITÉ ET INFORMATIONS LÉGALES
+        </span>
+        <button type="button" class="drawer-close" id="closeLegalBtn" aria-label="Fermer">&times;</button>
+      </div>
+      <div class="modal-sheet-body" style="line-height:1.7; font-size:0.95rem;">
+        
+        <h4 style="color:var(--color-violet); font-size:1.15rem; margin-bottom:0.5rem;">1. Éditeur de la plateforme</h4>
+        <p style="margin-bottom:1.25rem;">
+          Le présent site est édité par l'Équipe de Campagne de <strong>Jean Ernest Muscadin</strong>. Les mentions légales complètes (numéro d'enregistrement d'association ou de parti, responsable de publication désigné) seront inscrites dès la validation finale de la candidature auprès du Conseil Électoral Provisoire (CEP).
+        </p>
+
+        <h4 style="color:var(--color-violet); font-size:1.15rem; margin-bottom:0.5rem;">2. Respect de la vie privée et données personnelles</h4>
+        <p style="margin-bottom:1.25rem;">
+          Aucune donnée à caractère personnel n'est collectée à l'insu des visiteurs. Les adresses de courrier électronique communiquées via les formulaires ne font l'objet d'aucune cession commerciale, ni d'analyse prédictive ou d'attribution d'opinion politique.
+        </p>
+
+        <h4 style="color:var(--color-violet); font-size:1.15rem; margin-bottom:0.5rem;">3. Traceurs et cookies</h4>
+        <p style="margin-bottom:1.25rem;">
+          Ce site fonctionne sans aucun cookie publicitaire ni traceur tiers intrusif. La mesure d'audience éventuelle est strictement limitée à des données anonymisées de performance (nombre de visites, débit, temps de chargement) pour optimiser l'accès aux personnes disposant de connexions à faible débit en Haïti.
+        </p>
+
+        <h4 style="color:var(--color-violet); font-size:1.15rem; margin-bottom:0.5rem;">4. Propriété intellectuelle et droits sur les photographies</h4>
+        <p style="margin-bottom:0;">
+          Le logo « Fòs Chanjman Nasyonal » est reproduit sous réserve des conventions avec ladite organisation. Les photographies et visuels officiels publiés sont soumis au droit d'auteur. Toute réutilisation doit mentionner obligatoirement le crédit officiel.
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Script d'orchestration applicative bilingue -->
+  <script src="js/app.js"></script>
+</body>
+</html>
