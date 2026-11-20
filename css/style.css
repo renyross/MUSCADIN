@@ -2174,7 +2174,8 @@ section[id], details[id], #donationForm { scroll-margin-top: 95px; }
 .campaign-carousel { display: flex; gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
 .campaign-carousel::-webkit-scrollbar { display: none; }
 .carousel-card { flex: 0 0 calc((100% - 48px)/3); min-width: 0; scroll-snap-align: start; }
-.carousel-card > img, .gathering-image { width: 100%; aspect-ratio: 1.12; object-fit: cover; margin-bottom: 20px; }
+.carousel-card > img, .gathering-image { display: block; width: 100%; aspect-ratio: 1.55; margin-bottom: 16px; }
+.carousel-card > img { height: auto; object-fit: cover; }
 .carousel-card h3 { font-size: 18px; line-height: 1.4; color: #19334f; }
 .card-read { display: inline-block; color: #52708b; font-size: 12px; margin-top: 13px; font-weight: 700; }
 .dossier-card:hover h3 { color: var(--campaign-red); }
@@ -2197,7 +2198,7 @@ section[id], details[id], #donationForm { scroll-margin-top: 95px; }
 @media(prefers-reduced-motion:reduce) { .gathering-image img { transition: none; } }
 /* Dernière partie : rendez-vous photographiques, bénévolat et espace éditorial. */
 .campaign-gatherings .gathering-card { position: relative; }
-.campaign-gatherings .gathering-image { aspect-ratio: .86; margin-bottom: 0; }
+.campaign-gatherings .gathering-image { margin-bottom: 0; }
 .campaign-gatherings .gathering-image::after { content: ''; position: absolute; inset: 35% 0 0; background: linear-gradient(transparent,#071b32e8); }
 .campaign-gatherings .gathering-image > span { top: 15px; bottom: auto; z-index: 1; font-size: 10px; }
 .campaign-gatherings .gathering-card h3 { position: absolute; bottom: 22px; left: 20px; right: 20px; color: white; font-size: 19px; pointer-events: none; }
@@ -2440,7 +2441,7 @@ section[id], details[id], #donationForm { scroll-margin-top: 95px; }
 .movement-arrow { width: 26px; height: 26px; border: 1px solid #ffffff65; border-radius: 50%; display: grid; place-items: center; font-size: 14px; }
 .campaign-program-details { margin-top: 25px; padding-top: 22px; border-top: 1px solid #dbe3e9; }
 .campaign-program-details > summary { font-size: 12px; color: #315775; font-weight: 500; }
-.campaign-dossiers { margin: 0; padding: 90px 0; background: #0c2339; }
+.campaign-dossiers { margin: 0; padding: 56px 0; background: #0c2339; }
 .campaign-dossiers .carousel-heading, .campaign-dossiers .campaign-carousel { margin-left: 0; }
 .campaign-dossiers .carousel-heading { padding-right: 210px; }
 .campaign-dossiers h2 { color: white; font-size: 44px; }
@@ -2450,13 +2451,12 @@ section[id], details[id], #donationForm { scroll-margin-top: 95px; }
 .campaign-dossiers .carousel-controls button { color: #d9e8f3; border-color: #476077; }
 .campaign-dossiers .carousel-controls button:hover { background: #1d3b54; }
 .dossier-card { background: #163149; padding-bottom: 25px; }
-.dossier-card > img { aspect-ratio: 1.55; margin-bottom: 23px; filter: saturate(.8); }
+.dossier-card > img { filter: saturate(.8); }
 .dossier-card h3 { color: #f1f6fa; padding: 0 23px; font: 400 21px/1.35 'Outfit',Arial,sans-serif; }
 .dossier-card .card-read { margin: 20px 23px 0; color: #80bfdf; font-weight: 400; font-size: 11px; }
 .dossier-card:hover h3 { color: #80bfdf; }
-.campaign-gatherings { background: white; padding: 90px 0; }
+.campaign-gatherings { background: white; padding: 56px 0; }
 .carousel-heading h2 { font-size: 42px; }
-.campaign-gatherings .gathering-image { aspect-ratio: 1; }
 .campaign-gatherings .gathering-image > span { border-radius: 20px; padding: 7px 12px; color: #36576f; background: #fffffff0; font-weight: 500; }
 .campaign-gatherings .gathering-card h3 { font: 500 23px/1.25 'Outfit',Arial,sans-serif; bottom: 28px; left: 25px; }
 .gatherings-note { border-top: 1px solid #e2e9ef; padding-top: 20px; font-size: 11px; }
@@ -2498,7 +2498,9 @@ section[id], details[id], #donationForm { scroll-margin-top: 95px; }
 @media(max-width:800px) {
  .campaign-about, .campaign-movement, .campaign-dossiers, .campaign-gatherings, .campaign-newsroom { padding-top: 55px; padding-bottom: 55px; }
  .campaign-about-grid { grid-template-columns: 1fr; gap: 65px; }.campaign-collage { min-height: 420px; }.campaign-about h2, .movement-heading h2, .campaign-dossiers h2, .carousel-heading h2, .newsroom-heading h2 { font-size: 34px; letter-spacing: -1px; }
- .campaign-dossiers .carousel-heading { padding-right: 0; }.campaign-dossiers .carousel-section > .carousel-controls { position: static; margin-bottom: 25px; }
+ .campaign-dossiers, .campaign-gatherings { padding-block: 36px; }
+ .campaign-dossiers .carousel-heading { padding-right: 0; margin-bottom: 16px; }
+ .campaign-dossiers .carousel-section > .carousel-controls { position: static; margin-bottom: 16px; }
  .donation-layout { grid-template-columns: 1fr; gap: 30px; }.donation-copy { padding-left: 22px; }.donation-copy h2 { font-size: 44px; }.campaign-volunteer .donation-layout #donationForm { justify-self: center; }
  .newsroom-grid { gap: 18px; }.newsroom-card h3 { font-size: 20px; }.newsroom-card-body { padding: 20px; }
 }
